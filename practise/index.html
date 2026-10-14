@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      header{
+        display:flex;
+        background:goldenrod;
+        justify-content:space-between;
+        align-items:center;
+        padding:3%;
+      }
+      section{
+        display:flex;
+        align-items:center;
+      }
+      section>div{
+        flex-basis:50%;
+        padding:3%;
+      }
+      section img{
+        width:100%;
+        height:100%;
+      }
+
+      article{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+      }
+      article img{
+        width:200px;
+        height:100px;
+
+      }
+      
+
+      @media screen and (width<500px){
+        section{
+          flex-direction:column;
+        }
+        article{
+          grid-template-columns:1fr;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Company Name</h1>
+      <div>
+          <button>Home</button>
+          <button>About</button>
+          <button>Services</button>
+      </div>
+    </header>
+
+    <section>
+      <div>
+        <h1>Company name</h1>
+        <p>best for future.</p>
+        <button>explore</button>
+      </div>
+      <div>
+        <img src="https://img.magnific.com/free-photo/group-people-working-website-template_53876-25068.jpg?semt=ais_hybrid&w=740&q=80" alt="image">
+      </div>
+    </section>
+
+    <article>
+        <div>
+          <img src="https://img.magnific.com/free-photo/future-visions-business-technology-concept_23-2151893431.jpg?semt=ais_hybrid&w=740&q=80">
+          <h1>Card</h1>
+        </div>
+        <div>
+          <img src="https://img.magnific.com/free-photo/future-visions-business-technology-concept_23-2151893431.jpg?semt=ais_hybrid&w=740&q=80">
+          <h1>Card</h1>
+        </div>
+        <div>
+          <img src="https://img.magnific.com/free-photo/future-visions-business-technology-concept_23-2151893431.jpg?semt=ais_hybrid&w=740&q=80">
+          <h1>Card</h1>
+        </div>
+        <div>
+          <img src="https://img.magnific.com/free-photo/future-visions-business-technology-concept_23-2151893431.jpg?semt=ais_hybrid&w=740&q=80">
+          <h1>Card</h1>
+        </div>
+
+    </article>
+
+    <script>
+  let apilink="https://fakestoreapi.com/products"
+
+  fetch(apilink).then(data=>data.json())
+  .then(finaldata=>console.log(finaldata))
+  .catch(err=>console.log(err))
+  
+    </script>
+</body>
+</html>

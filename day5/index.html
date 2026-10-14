@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header,footer{
+            background-color:navy;
+            
+            text-align: center;
+            padding: 20px;
+        }
+        button{
+            background-color:blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        button:hover{
+            background-color: rgb(163, 64, 64);
+            color: white;
+        }
+        .s1{
+            text-align:center;
+            height: auto;
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+                                 url(https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg);
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 100px 200px;
+            color: white;
+
+        }
+        .s2{
+            height: 400px;
+            padding:30px;
+            text-align: center;
+        }
+        .s2 div{
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            line-height: 100px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <button>Home</button>
+        <button>About</button>
+        <button>Services</button>
+        <button>Contact</button>
+    </header>
+    <section id = "s1" class="s1">
+        <h1>Welcome to my website</h1>
+        <p>This is a simple website created using HTML and CSS.</p>
+    </section>
+
+    <section class="s2">
+        <h1>CSS Colors</h1>
+        <div style ="background-color: red">Red</div>
+        <div style ="background-color: green;">Green</div>
+        <div style ="background-color: blue;">Blue</div>
+    </section>
+
+    <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div>
+            <h3>Card One</h3>
+            <p>Padding creates space inside the element.</p>
+            
+        </div>
+        <div>
+            <h3>Card Two</h3>
+            <p>Margin creates space outside the element.</p>
+        </div>
+        <div>
+            <h3>Card Three</h3>
+            <p>Border defines the edge of the element.</p>
+        </div>
+    </section>
+
+<footer>
+     2023 My Website. All rights reserved.
+</footer>
+</body>
+</html>
